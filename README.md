@@ -36,3 +36,7 @@ Commands to start on production:
 * `npm i`
 * `npm run build`
 * `npm run prod`
+
+## TODOs
+* Unit tests
+* Performance optimization
