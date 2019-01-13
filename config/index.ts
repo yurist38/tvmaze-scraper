@@ -31,8 +31,13 @@ if (!isProduction) {
 }
 
 if (!envFields.every((f) => !!process.env[f])) {
+  const missingVars: string[] = envFields.filter((f) => !process.env[f]);
   // tslint:disable-next-line no-console
-  console.error('Error: some environment variables are missing. Shutting down...');
+  console.error(
+    'Error: some environment variables are missing. Shutting down...',
+    'Missing variables:',
+    missingVars,
+  );
   process.exit(1);
 }
 

@@ -1,1 +1,1 @@
-web: npm run build && npm run prod
+web: npm i --only=dev && npm run build && npm run prod
