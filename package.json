@@ -9,6 +9,7 @@
     "dev": "ts-node index.ts",
     "prod": "NODE_ENV=production node ./dist/index.js",
     "lint": "tslint ./**/*.ts",
+    "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Yuri Drabik <yurist38@mail.ru>",
