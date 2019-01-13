@@ -1,0 +1,8 @@
+// Compiled code
+dist
+
+// Node.js modules
+node_modules
+
+// Development Database
+db.dev.sqlite3
