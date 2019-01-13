@@ -1,6 +1,20 @@
 # TvMaze Scraper application
 
-It's Node.js app written on TypeScript.
+It's Node.js app written on TypeScript. Currently deployed on [Heroku](https://tvmaze-scraper.herokuapp.com)
+
+## API
+
+#### [GET] `/status`
+Endpoint to check the current state of the scraper.
+
+#### [GET] `/shows`
+Provides an information about shows, paginated by size specified in environment variables (`PAGE_LIMIT`).
+
+To request a specific page please use query param `page` (`/shows?page=2`)
+
+#### [GET] `/shows/:id`
+Provides an information about specific show
+
 
 ## Configuration
 All required environment variables are listed in `.env.development` file.
