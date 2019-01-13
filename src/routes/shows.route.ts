@@ -22,7 +22,7 @@ showsRoute.get('/:showId', async (req, res, next) => {
       name: show.name,
     });
   } catch (err) {
-    next(err);
+    res.status(500).send('Oups, something went wrong...');
   }
 });
 
@@ -45,7 +45,7 @@ showsRoute.get('/', async (req, res, next) => {
 
     res.json(showsFormatted);
   } catch (err) {
-    next(err);
+    res.status(500).send('Oups, something went wrong...');
   }
 });
 

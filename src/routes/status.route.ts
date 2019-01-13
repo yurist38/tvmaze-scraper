@@ -13,7 +13,7 @@ statusRoute.get('/', async (req, res, next) => {
     res.write(`Total amount of scraped shows: ${showsNumber}\n`);
     res.end();
   } catch (err) {
-    next(err);
+    res.status(500).send('Oups, something went wrong...');
   }
 });
 
